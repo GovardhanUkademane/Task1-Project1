@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app = "myapp">
+   
+   <head>
+      <script src = "angular.min.js"></script>
+   </head>
+   
+   <body ng-controller="MainController">
+     
+	   <h1>Name is : {{Name}}</h1>
+	   <h2>Age is  : {{Age}} </h2>
+	<img src="{{Imgsrc}}">
+
+
+	<script>
+         angular.module("myapp", [])
+         
+         .controller("MainController",function($scope) {
+           
+           $scope.Name = "Govardhan";
+			$scope.Age= 25;
+			$scope.Imgsrc="http://cdn.meme.am/instances/500x/23426452.jpg";
+			$scope.country = "India"
+         });
+      </script>
+      
+   </body>
+</html>
+
